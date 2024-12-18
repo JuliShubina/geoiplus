@@ -5,14 +5,14 @@ import "./MyNavbar.css";
 const MyNavbar = () => {
   return (
     <>
-      <Navbar collapseOnSelect expand="md" className="full-height-navbar">
+      <Navbar collapseOnSelect expand="md" className="full-height-navbar ">
         <Container>
-          <Navbar.Brand className="logo" href="#home">
+          <Navbar.Brand className="logo me-auto" href="#home">
             Geoinnovation+
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav>
+            <Nav className="ms-auto">
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#About">About</Nav.Link>
               <Nav.Link href="#Experience">Experience</Nav.Link>
