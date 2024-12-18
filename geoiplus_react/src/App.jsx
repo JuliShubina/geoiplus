@@ -7,6 +7,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/hero section/Hero";
 import AboutSection from "./components/about section/AboutSection";
 import ExperienceSection from "./components/experience section/ExperienceSection";
+import Portfolio from "./components/portfolio section/Portfolio";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <main id="main">
         <AboutSection />
         <ExperienceSection />
+        <Portfolio />
       </main>
     </>
   );
