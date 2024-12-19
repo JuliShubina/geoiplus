@@ -8,7 +8,7 @@ const Hero = () => {
       <Container>
         <h1>Welcome to Geoinnovation+</h1>
         <h2>Where Innovation Meets Geography</h2>
-        <a href="#about" className="btn-get-started scrollto">
+        <a href="#about" className="btn-get-started">
           Get Started
         </a>
       </Container>
