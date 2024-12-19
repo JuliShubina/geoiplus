@@ -1,11 +1,22 @@
 .full-height-navbar {
   height: 100%; /* Растягиваем Navbar по высоте родителя */
 }
+.navbar {
+  padding: 0;
+}
+
 .navbar a,
 .navbar a:focus {
+  margin-left: 5px;
   padding: 25px 15px 24px 15px;
   font-size: 14px;
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar a:hover,
+.navbar .active {
+  background: #cc1616;
 }
