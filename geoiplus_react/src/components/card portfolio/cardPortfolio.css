@@ -1,0 +1,76 @@
+.custom-carousel {
+  position: relative;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-carousel .carousel-indicators {
+  position: absolute;
+  left: 50%; /* Центрирование по горизонтали */
+  transform: translateX(-50%); /* Сдвиг для центрирования */
+  margin-left: 0;
+}
+
+.custom-carousel .carousel-indicators button {
+  width: 12px; /* Ширина точки индикатора. */
+  height: 12px; /* Высота точки индикатора. */
+  border: 1px solid #cc1616;
+  background-color: #fff; /* Цвет индикатора (черный). */
+  border-radius: 50%; /* Делаем индикаторы круглыми. */
+  margin: 0 5px; /* Расстояние между точками. */
+  opacity: 1;
+}
+
+.custom-carousel .carousel-indicators .active {
+  opacity: 1; /* Активный индикатор полностью видимый. */
+  background-color: #cc1616; /* Синий цвет активного индикатора. */
+}
+.portfolio-details {
+  padding-top: 40px;
+}
+.portfolio-details .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px rgba(25, 25, 25, 0.08);
+}
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+.portfolio-details .portfolio-description {
+  padding-top: 30px;
+}
+
+.portfolio-details .portfolio-description h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-details .portfolio-description p {
+  padding: 0;
+}
+
+.breadcrumbs {
+  padding: 15px 0;
+  background: #efefef;
+}
+.breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
