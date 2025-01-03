@@ -1,0 +1,42 @@
+[
+  {
+    "url": "portfolio-asbestos-project",
+    "name_project": "Asbestos project",
+    "img": ["img/portfolio/asbestos_project_1.png", "img/portfolio/asbestos_project_2.png", "img/portfolio/asbestos_project_3.png"],
+    "category": "SW development, data processing",
+    "project_date": "July 2023 - May 2024",
+    "project_description": "Objective of the project is to detect all the roofs in entire Belgium that might potentially contain asbestos. Project’s scope included: development of project specifications, workflow design, QGIS plugins development (to deal with oblique images, street images, orthophoto), roofs assessment, data delivery. In total approx 260 000 roofs were analyzed."
+  },
+  {
+    "url": "portfolio-oblique-viewer",
+    "name_project": "Oblique viewer",
+    "img": ["img/portfolio/oblique_viewer_1.png", "img/portfolio/oblique_viewer_2.png", "img/portfolio/oblique_viewer_3.png"],
+    "category": "SW development",
+    "project_date": "March 2024",
+    "project_description": "Cross-platform plugin for oblique images visualization and capturing 3D-vector. The plugin has a deep integration with well-known systems, such as QGIS, BricsCAD, Microstatin, etc."
+  },
+  {
+    "url": "portfolio-road-damages",
+    "name_project": "Object detection for road damages",
+    "img": ["img/portfolio/road_damages_1.png", "img/portfolio/road_damages_2.png"],
+    "category": "ML/AI",
+    "project_date": "2023-2024",
+    "project_description": "Objective of the project was to deliver a trained ML model that could detect the following road damages: cracks, potholes, alligator cracks, side road damages. Overall project scope included: design of the multiuser annotation production pipeline, data annotation using customer’s data, training, validation, testing and benchmarking data preparation, training data extraction utilities, training data check, model hyperparameter tuning, model training, model evaluation, model benchmarking."
+  },
+  {
+    "url": "portfolio-smart-survey",
+    "name_project": "Smart survey",
+    "img": ["img/portfolio/smart_survey_1.png", "img/portfolio/smart_survey_2.png"],
+    "category": "SW development",
+    "project_date": "July-August 2024",
+    "project_description": "Optimization of an algorithm to extract frames from the videos. Original algorithm was extracting frames based only on the frames per sec while new proposed algorithm was extracting based on various factors as well as analyzing frames blurriness. As a result, only best quality frames, reduced amount of frames, reduced post-processing time (2x-5x faster as compared to previous algorithm)."
+  },
+  {
+    "url": "portfolio-vegetation-management",
+    "name_project": "Vegetation management",
+    "img": ["img/portfolio/vegetation_management_1.png", "img/portfolio/vegetation_management_2.png", "img/portfolio/vegetation_management_3.png"],
+    "category": "3D analysis",
+    "project_date": "December 2023",
+    "project_description": "Automatic detection and documentation (XLS + PDF) of vegetation intrusion into the protection zone of power transmission lines using a point cloud."
+  }
+]
