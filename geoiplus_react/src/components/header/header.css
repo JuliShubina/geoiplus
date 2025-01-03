@@ -1,57 +1,9 @@
 /* -------------header----------- */
 #header {
+  position: sticky;
+  top: 0;
   background: rgba(25, 25, 25, 0.95);
   transition: all 0.5s;
-  /* z-index: 997; */
-  height: 70px;
-}
-#header .logo {
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #fff;
-  text-transform: uppercase;
-}
-/* -------------top bar----------- */
-#topbar {
-  background: #191919;
-  font-size: 15px;
-  height: 40px;
-  padding: 0;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-#topbar .contact-info a {
-  line-height: 0;
-  color: rgba(255, 255, 255, 0.6);
-  transition: 0.3s;
-}
-
-#topbar .contact-info a:hover {
-  color: #fff;
-}
-
-#topbar .contact-info i {
-  color: #cc1616;
-  line-height: 0;
-  margin-right: 5px;
-}
-
-#topbar .contact-info .phone-icon {
-  margin-left: 15px;
-}
-
-#topbar .social-links a {
-  color: rgba(255, 255, 255, 0.6);
-  padding: 4px 12px;
-  display: inline-block;
-  line-height: 1px;
-  transition: 0.3s;
-}
-
-#topbar .social-links a:hover {
-  color: #fff;
+  z-index: 997;
+  /* height: 70px; */
 }
