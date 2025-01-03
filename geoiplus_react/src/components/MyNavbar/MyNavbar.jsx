@@ -33,7 +33,7 @@ const MyNavbar = () => {
           />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="topbar" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
+              <Link to="hero" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
                 Home
               </Link>
               <Link to="about" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
