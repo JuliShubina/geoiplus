@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import aboutImg from "../../img/about.jpg";
+import aboutImg from "../../data/img/about.jpg";
 import "./aboutSection.css";
 
 const AboutSection = () => {
