@@ -34,7 +34,7 @@ const Header = ({ from, place }) => {
 
   return (
     <header id="header">
-      {from === "Main" && <MyNavbar isScrolled={isScrolled} />}
+      {from === "MainPage" && <MyNavbar isScrolled={isScrolled} />}
       {from === "CardPortfolio" && <NavBarForCP place={place} />}
     </header>
   );
