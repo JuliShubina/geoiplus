@@ -1,7 +1,13 @@
 import { Container } from "react-bootstrap";
 import "./contactSection.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ContactSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <section id="contact" className="contact">
       <Container>
@@ -10,7 +16,7 @@ const ContactSection = () => {
           <h2>Contact</h2>
         </div>
 
-        <div className="row">
+        <div className="row" data-aos="fade-up">
           <div className="col-lg-6 col-md-6">
             <div className="info-box mb-4">
               <i className="bx bx-envelope"></i>

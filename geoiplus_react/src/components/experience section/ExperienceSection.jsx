@@ -1,7 +1,13 @@
 import { Container } from "react-bootstrap";
 import "./experienceSection.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ExperienceSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <section id="experience" className="experience">
       <Container>
@@ -11,7 +17,7 @@ const ExperienceSection = () => {
         </div>
 
         <div className="row">
-          <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div className="icon-box">
               <div className="icon">
                 <i className="bx bxl-dribbble"></i>
@@ -40,7 +46,7 @@ const ExperienceSection = () => {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div className="icon-box">
               <div className="icon">
                 <i className="bx bxl-internet-explorer"></i>
@@ -63,7 +69,7 @@ const ExperienceSection = () => {
             </div>
           </div>
 
-          <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div className="icon-box">
               <div className="icon">
                 <i className="bx bx-brain"></i>
@@ -91,7 +97,7 @@ const ExperienceSection = () => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div className="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div className="icon-box">
               <div className="icon">
                 <i className="bx bxl-dev-to"></i>

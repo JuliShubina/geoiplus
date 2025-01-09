@@ -1,8 +1,14 @@
 import { Container } from "react-bootstrap";
 import aboutImg from "../../data/img/about.jpg";
 import "./aboutSection.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const AboutSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <section id="about" className="about">
       <Container>
@@ -12,10 +18,10 @@ const AboutSection = () => {
         </div>
 
         <div className="row">
-          <div className="col-lg-6 order-1 order-lg-2">
+          <div className="col-lg-6 order-1 order-lg-2 " data-aos="fade-left">
             <img src={aboutImg} alt="Image about section" className="img-fluid" />
           </div>
-          <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 ">
+          <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 " data-aos="fade-right">
             <p>
               At GeoInnovation Plus, we are passionate about pushing the boundaries in the field of geographical data processing, GIS, and web development. Our mission is to transform complex data
               into valuable insights because we believe that data is only data until it&#39;s turned into information.
