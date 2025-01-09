@@ -6,12 +6,18 @@ import smart_survey_preview from "../../data/img/portfolio/preview/smart_survey_
 import vegetation_management_preview from "../../data/img/portfolio/preview/vegetation_management_preview.png";
 import oblique_viewer_preview from "../../data/img/portfolio/preview/oblique_viewer_preview.png";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
   return (
     <>
       <section id="portfolio" className="portfolio">
-        <Container>
+        <Container data-aos="fade-up">
           <div className="section-title">
             <span>Portfolio</span>
             <h2>Portfolio</h2>
