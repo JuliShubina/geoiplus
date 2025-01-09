@@ -35,3 +35,19 @@
 #header .navbar a.logo:hover {
   background: none;
 }
+.full-height-navbar {
+  transition: background-color 0.3s ease;
+}
+
+.scrolled-navbar {
+  background-color: #191919 !important;
+}
+
+/* .navbar-collapse.show {
+  background-color: #fff;
+} */
+
+/* #header .navbar a,
+#header .navbar a:focus {
+  color: #191919;
+} */

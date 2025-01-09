@@ -6,10 +6,11 @@ import TopBar from "../top bar/TopBar";
 export const Layout = () => {
   return (
     <>
-      <TopBar />
-      <Outlet />
-      <Footer />
-      <BackToTop />
+      <div className="wrapper">
+        <Outlet />
+        <Footer />
+        <BackToTop />
+      </div>
     </>
   );
 };

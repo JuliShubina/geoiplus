@@ -3,9 +3,10 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import "./MyNavbar.css";
 import { useState } from "react";
+import PropTypes from "prop-types";
 // import { Link } from "react-router-dom";
 
-const MyNavbar = () => {
+const MyNavbar = ({ isScrolled }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {
@@ -15,13 +16,15 @@ const MyNavbar = () => {
   const closeMenu = () => {
     setIsOpen(false);
   };
+
   return (
     <>
-      <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark" className="full-height-navbar " expanded={isOpen}>
+      <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark" className={`full-height-navbar ${isScrolled ? "scrolled-navbar" : ""}`} expanded={isOpen}>
         <Container>
           <Navbar.Brand className="logo me-auto" href="#topbar">
             Geoinnovation+
           </Navbar.Brand>
+
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{
@@ -30,10 +33,13 @@ const MyNavbar = () => {
               padding: "0px",
             }}
             onClick={handleToggle}
-          />
+          >
+            <i className="bi bi-list mobile-nav-toggle"></i>
+          </Navbar.Toggle>
+
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link to="hero" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
+              <Link to="home" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
                 Home
               </Link>
               <Link to="about" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
@@ -42,10 +48,10 @@ const MyNavbar = () => {
               <Link to="experience" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
                 Experience
               </Link>
-              <Link to="portfolio" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
+              <Link to="portfolio" duration={500} activeClass="active" spy={true} offset={-40} className="nav-link" onClick={closeMenu}>
                 Portfolio
               </Link>
-              <Link to="contact" duration={500} activeClass="active" spy={true} offset={-70} className="nav-link" onClick={closeMenu}>
+              <Link to="contact" duration={500} activeClass="active" spy={true} offset={-40} className="nav-link" onClick={closeMenu}>
                 Contact
               </Link>
             </Nav>
@@ -54,6 +60,9 @@ const MyNavbar = () => {
       </Navbar>
     </>
   );
+};
+MyNavbar.propTypes = {
+  isScrolled: PropTypes.bool.isRequired,
 };
 
 export default MyNavbar;

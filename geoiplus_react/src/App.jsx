@@ -3,16 +3,19 @@ import { Layout } from "./components/layout/Layout";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/base.css";
-import Main from "./components/main/Main";
+import MainPage from "./components/main/MainPage";
 import CardPortfolio from "./components/card portfolio/CardPortfolio";
 import projects from "./data/projects.json";
+import ScrollToTop from "./components/scroll to top/ScrollToTop";
+import NotFoundPage from "./components/not found page/NotFoundPage";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Main />} />
+          <Route index element={<MainPage />} />
           {projects.map((project, index) => (
             <Route
               key={index}
@@ -28,6 +31,7 @@ function App() {
               }
             />
           ))}
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </>

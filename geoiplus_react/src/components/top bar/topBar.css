@@ -1,4 +1,6 @@
 #topbar {
+  position: relative;
+
   background: #191919;
   font-size: 15px;
   height: 40px;

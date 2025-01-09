@@ -1,19 +1,14 @@
 import { Carousel, Container } from "react-bootstrap";
 import Breadcrumbs from "../breadcrumbs/Breadcrumbs";
-// import road_damages_1 from "../../../public/img/portfolio/road_damages_1.png";
-
 import "./cardPortfolio.css";
 import PropTypes from "prop-types";
-import NavBarForCP from "../navBar for CardPortffolio/navBarForCP";
 import Header from "../header/Header";
-import { useEffect } from "react";
+import TopBar from "../top bar/TopBar";
 
 const CardPortfolio = ({ project_date, category, project_description, img, name_project }) => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
   return (
     <>
+      <TopBar />
       <Header from="CardPortfolio" />
 
       <section id="breadcrumbs" className="breadcrumbs">
@@ -31,7 +26,7 @@ const CardPortfolio = ({ project_date, category, project_description, img, name_
                 <Carousel controls={false} className="custom-carousel d-flex  flex-column-reverse">
                   {img.map((imageSrc, index) => (
                     <Carousel.Item key={index}>
-                      <img src={imageSrc} className="img-fluid" alt={`road damage ${index + 1}`} />
+                      <img src={imageSrc} className="img-fluid" alt={`${name_project} ${index + 1}`} />
                     </Carousel.Item>
                   ))}
                 </Carousel>

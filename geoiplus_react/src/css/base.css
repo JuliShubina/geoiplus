@@ -25,7 +25,13 @@ h6 {
 
 .wrapper {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: clip;
+}
+.wrapper > main {
+  flex-grow: 1;
 }
 
 /* # Sections General  */
