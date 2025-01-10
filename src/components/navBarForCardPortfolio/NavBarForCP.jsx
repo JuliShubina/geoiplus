@@ -1,5 +1,6 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 import { useState } from "react";
 import "../MyNavbar/MyNavbar.css";
@@ -15,8 +16,10 @@ const NavBarForCP = ({ place }) => {
     <>
       <Navbar collapseOnSelect expand="md" bg="dark" data-bs-theme="dark" className="full-height-navbar " expanded={isOpen}>
         <Container>
-          <Navbar.Brand className="logo me-auto" href="/">
-            Geoinnovation+
+          <Navbar.Brand>
+            <Link className="logo me-auto" to="/">
+              Geoinnovation+
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"
