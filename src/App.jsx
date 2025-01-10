@@ -4,10 +4,10 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/base.css";
 import MainPage from "./components/main/MainPage.jsx";
-import CardPortfolio from "./components/cardPortfolio/CardPortfolio.jsx";
 import projects from "./data/projects.json";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop.jsx";
 import NotFoundPage from "./components/notFoundPage/NotFoundPage.jsx";
+import CardPortfolio from "./components/cardPortfolio/CardPortfolio.jsx";
 
 function App() {
   return (
