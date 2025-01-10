@@ -2,8 +2,8 @@ import { Carousel, Container } from "react-bootstrap";
 import Breadcrumbs from "../breadcrumbs/Breadcrumbs.jsx";
 import "./cardPortfolio.css";
 import PropTypes from "prop-types";
-import Header from "../header/Header";
-import TopBar from "../top bar/TopBar";
+import Header from "../header/Header.jsx";
+import TopBar from "../topBar/TopBar.jsx";
 
 const CardPortfolio = ({ project_date, category, project_description, img, name_project }) => {
   return (
