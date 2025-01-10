@@ -1,10 +1,10 @@
-import AboutSection from "../about section/AboutSection";
-import ContactSection from "../contact section/ContactSection";
-import ExperienceSection from "../experience section/ExperienceSection";
-import Hero from "../hero section/Hero";
-import Portfolio from "../portfolio section/Portfolio";
-import Header from "../header/Header";
-import TopBar from "../top bar/TopBar";
+import AboutSection from "../about section/AboutSection.jsx";
+import ContactSection from "../contact section/ContactSection.jsx";
+import ExperienceSection from "../experience section/ExperienceSection.jsx";
+import Hero from "../hero section/Hero.jsx";
+import Portfolio from "../portfolio section/Portfolio.jsx";
+import Header from "../header/Header.jsx";
+import TopBar from "../top bar/TopBar.jsx";
 
 const MainPage = () => {
   return (

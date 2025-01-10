@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import { Layout } from "./components/layout/Layout";
+import { Layout } from "./components/layout/Layout.jsx";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/base.css";
-import MainPage from "./components/main/MainPage";
-import CardPortfolio from "./components/card portfolio/CardPortfolio";
+import MainPage from "./components/main/MainPage.jsx";
+import CardPortfolio from "./components/card portfolio/CardPortfolio.jsx";
 import projects from "./data/projects.json";
-import ScrollToTop from "./components/scroll to top/ScrollToTop";
-import NotFoundPage from "./components/not found page/NotFoundPage";
+import ScrollToTop from "./components/scroll to top/ScrollToTop.jsx";
+import NotFoundPage from "./components/not found page/NotFoundPage.jsx";
 
 function App() {
   return (

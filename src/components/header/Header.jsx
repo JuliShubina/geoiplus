@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import MyNavbar from "../MyNavbar/MyNavbar";
-import NavBarForCP from "../navBar for CardPortfolio/navBarForCP";
+import MyNavbar from "../MyNavbar/MyNavbar.jsx";
+import NavBarForCP from "../navBarForCardPortfolio/NavBarForCP.jsx";
 import "./header.css";
 import PropTypes from "prop-types";
 

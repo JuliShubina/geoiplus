@@ -4,7 +4,6 @@ import { Link } from "react-scroll";
 import "./MyNavbar.css";
 import { useState } from "react";
 import PropTypes from "prop-types";
-// import { Link } from "react-router-dom";
 
 const MyNavbar = ({ isScrolled }) => {
   const [isOpen, setIsOpen] = useState(false);
